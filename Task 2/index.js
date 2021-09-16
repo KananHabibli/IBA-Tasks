@@ -8,7 +8,7 @@ class AdjacentMatrix {
   }
 
   createVisitedMatrix() {
-    //   create an empty array for keep track of visited entries in the matrix
+    // create an empty array to keep track of visited entries in the matrix
     let matrix = new Array(this.numbOfRows);
 
     for (let i = 0; i < this.numbOfRows; i++) {
@@ -79,10 +79,6 @@ class AdjacentMatrix {
     }
   }
 
-  /**
-   * @param {number[][]} matrix
-   * @return {number}
-   */
   solution() {
     //  create new matrix for visited matrix
     this.createVisitedMatrix();
@@ -90,8 +86,8 @@ class AdjacentMatrix {
     // loop through the initial matrix to find the countries
     for (let i = 0; i < this.numbOfRows; i++) {
       for (let j = 0; j < this.numbOfColumns; j++) {
-        // if entry is not visited, it means it is a potential new country
-        // now, we need to find out how big is this country
+        // if the entry is not visited, it means it is a potential new country
+        // now, we need to find out how big this country is
         if (!this.isVisited(i, j)) {
           this.numbOfCountries++;
           this.findAllNeighbors(this.matrix[i][j], i, j);
