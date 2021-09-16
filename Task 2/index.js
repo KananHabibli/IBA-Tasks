@@ -107,10 +107,12 @@ class AdjacentMatrix {
 
 /**
  * Finds the number of countries inside the matrix
- * @example matrix array
- * // returns 8
+ * @example matrix array below
+ * // returns 7
  * @returns {number} Returns the number of countries.
  */
+
+// To test the program, just change the matrix to see the result
 
 let matrix = [
   [4, 4, 4],
@@ -122,17 +124,7 @@ let matrix = [
   [4, 1, 1],
 ];
 
-let matrix1 = [
-  [4, 4, 4],
-  [4, 4, 4],
-  [3, 2, 4],
-  [2, 5, 2],
-  [3, 3, 4],
-  [1, 6, 4],
-  [8, 8, 1],
-];
-
-let newInstance = new AdjacentMatrix(matrix1);
+let newInstance = new AdjacentMatrix(matrix);
 
 newInstance.solution();
 console.log(`The number of countries is ${newInstance.numbOfCountries}`);

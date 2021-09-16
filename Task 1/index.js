@@ -18,6 +18,16 @@ const carParkingRoof = (cars, k) => {
   return min;
 };
 
+// ----------------------------------------------------------------
+
+/**
+ * Finds the minimum size of the roof in the parking lot
+ * @example [6, 2, 12, 7], 3
+ * // returns 6
+ * @returns {number} Returns the roof size.
+ */
+
+// To test the program, just change two variables below to see the result
 let cars = [6, 2, 12, 7];
 let k = 3;
 
